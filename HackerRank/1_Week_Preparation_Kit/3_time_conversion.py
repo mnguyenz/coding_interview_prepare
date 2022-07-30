@@ -6,18 +6,18 @@ import sys
 from textwrap import wrap
 
 def timeConversion(s):
-  # splitHoursMinutes = s.split(":")
-  # splitSecondsAmPm = wrap(splitHoursMinutes[2], 2)
-  # if splitSecondsAmPm[1] == "AM":
-  #   if splitHoursMinutes[0] == "12":
-  #     return "00:" + splitHoursMinutes[1] + ":" + splitSecondsAmPm[0]
+  # split_hours_minutes = s.split(":")
+  # split_seconds_am_pm = wrap(split_hours_minutes[2], 2)
+  # if split_seconds_am_pm[1] == "AM":
+  #   if split_hours_minutes[0] == "12":
+  #     return "00:" + split_hours_minutes[1] + ":" + split_seconds_am_pm[0]
   #   else:
-  #     return splitHoursMinutes[0] + ":" + splitHoursMinutes[1] + ":" + splitSecondsAmPm[0]
+  #     return split_hours_minutes[0] + ":" + split_hours_minutes[1] + ":" + split_seconds_am_pm[0]
   # else:
-  #   if splitHoursMinutes[0] == "12":
-  #     return splitHoursMinutes[0] + splitHoursMinutes[1] + ":" + splitSecondsAmPm[0]
+  #   if split_hours_minutes[0] == "12":
+  #     return split_hours_minutes[0] + split_hours_minutes[1] + ":" + split_seconds_am_pm[0]
   #   else:
-  #     return str(int(splitHoursMinutes[0]) + 12) + ":" + splitHoursMinutes[1] + ":" + splitSecondsAmPm[0]
+  #     return str(int(split_hours_minutes[0]) + 12) + ":" + split_hours_minutes[1] + ":" + split_seconds_am_pm[0]
   h = s[:2]
   amPm = s[-2:]
   msec = s[2:8]
