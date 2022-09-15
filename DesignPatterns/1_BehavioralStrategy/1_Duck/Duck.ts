@@ -17,6 +17,13 @@ export abstract class Duck {
     this.soundBehavior.sound();
   }
 
+  setFlyBehavior(fbParam: FlyBehavior): void {
+    this.flyBehavior = fbParam;
+  }
+  setSoundBehavior(sbParam: SoundBehavior): void {
+    this.soundBehavior = sbParam;
+  }
+
   swim(): void {
     console.log("All ducks float, even decoys!");
   }

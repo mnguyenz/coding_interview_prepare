@@ -2,7 +2,7 @@ export interface FlyBehavior {
   fly(): void;
 }
 
-class FlyNoWay implements FlyBehavior {
+export class FlyNoWay implements FlyBehavior {
   fly(): void {
     console.log("I cannot fly!");
   }
