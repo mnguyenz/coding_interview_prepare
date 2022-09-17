@@ -1,9 +1,11 @@
 import {WeatherData} from './WeatherData';
 import {CurrentConditionsDisplay} from './CurrentConditionsDisplay';
+import {StatisticsDisplay} from './StatisticsDisplay';
 
 export class WeatherStation {
   weatherData: WeatherData = new WeatherData();
   currentDisplay: CurrentConditionsDisplay = new CurrentConditionsDisplay(this.weatherData);
+  statisticsDisplay: StatisticsDisplay = new StatisticsDisplay(this.weatherData);
 
   WeatherStationTest(): void {
     this.weatherData

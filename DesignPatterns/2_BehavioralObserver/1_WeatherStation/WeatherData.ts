@@ -11,15 +11,15 @@ export class WeatherData implements Subject {
     this.observers.push(observerParam);
   }
   removeObserver(observerParam: Observer): void {
-    this.observers.forEach( (item, index) => {
-      if (item === observerParam) {
+    this.observers.forEach( (observer, index) => {
+      if (observer === observerParam) {
         this.observers.splice(index, 1);
       } 
     });
   }
   notifyObserver(): void {
-    this.observers.forEach( (item) => {
-      item.update(this.temperature, this.humidity, this.pressure);
+    this.observers.forEach( (observer) => {
+      observer.update(this.temperature, this.humidity, this.pressure);
     });
   }
  
