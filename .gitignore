@@ -1,8 +1,6 @@
 # dependencies
 node_modules/
 
-# IDE
-/.vscode
-
 # misc
 yarn.lock
+package-lock.json
