@@ -20,6 +20,6 @@ FROM
   Employee
 ORDER BY
   salary
-LIMIt
+LIMIT
   1, 1
 
