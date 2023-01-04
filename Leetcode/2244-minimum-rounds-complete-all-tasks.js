@@ -11,12 +11,16 @@ const minimumRounds = (tasks) => {
       map.set(tasks[i], 1);
     }
   }
-  if (Array.from(map.values()).includes(1)) {
-    return -1;
-  }
+  // if (Array.from(map.values()).includes(1)) {
+  //   return -1;
+  // }
   let sum = 0;
   for (const key of map.keys()) {
-    sum += ((map.get(key) + 2) - (map.get(key) + 2) % 3) / 3;
+    if (map.get(key) === 1) {
+      return -1;
+    } else {
+      sum += ((map.get(key) + 2) - (map.get(key) + 2) % 3) / 3;
+    }  
   }
   return sum;
 }
